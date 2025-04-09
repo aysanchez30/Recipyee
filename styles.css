@@ -1,0 +1,112 @@
+/* ---------- GENERAL ---------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #222;
+    font-size: 16px;
+  }
+  
+  /* ---------- HEADERS ---------- */
+  h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #1e1e1e;
+  }
+  
+  h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    color: #2e2e2e;
+  }
+  
+  h3 {
+    font-family: 'Georgia', serif;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  /* ---------- NAVIGATION ---------- */
+  nav {
+    background-color: #d3dbf3;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* ---------- MAIN CONTENT ---------- */
+  main p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  section h3 {
+    color: #444;
+  }
+  
+  .card, .info-box, .form-box {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* ---------- FORM SECTION ---------- */
+  form {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  form button {
+    background-color: #d3dbf3;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* ---------- FOOTER ---------- */
+  footer {
+    background-color: #d3dbf3;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
