@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="recipes" content="recipeyee">
+    <title>Recipeyee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-<body>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="recipes" content="recipeyee">
-        <title>Recipeyee</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google metatag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9VMWMFRN8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,34 +16,39 @@
 
   gtag('config', 'G-F9VMWMFRN8');
 </script>
-    <header>
-        <img src="images/logo.png" alt="logo" style="width: 30px; height: 30px;">
-        <h1>Recipeyee</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="recipe1.html">Recipes</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <p>Welcome to Recipeyee, your new favorite recipe blog website! Whether you are a new chef or the most experienced, you can and will find delicious recipes here! Explore our site and discover everything we have to offer!</p>
-        
-        <img src="images/heroimage.jpg" alt="Main dish with sides" style="width: 90%; height: 200px;">
-        <h2>Featured Recipes</h2>
-        
-    <div>
-        <img src="images/cajunpasta.jpg" alt="Cajun Pasta" style="width: 100px; height: 100px;">
-        <p>Cajun Pasta</p>
+<header>
+    <div class="header-container">
+      <img src="images/logo.png" alt="logo" class="logo">
+      <h1>Recipeyee</h1>
     </div>
-    <div>
-        <img src="images/eggrolls.jpg" alt="Western Eggrolls" style="width: 100px; height: 100px;">
-        <p>Western Eggrolls</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recipe1.html">Recipes</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <p class="welcome-text">Welcome to Recipeyee your new favorite recipe blog website! Whether you are a new chef or the most experienced you can and will find delicious recipes here! Explore our site and discover everything we have to offer!</p>
+  
+    <img src="images/heroimage.jpg" alt="Main dish with sides" class="hero-image">
+  
+    <h2>Featured Recipes</h2 >
+    <div class="featured-recipes">
+      <div class="recipe-card">
+        <img src="images/cajunpasta.jpg" alt="Cajun Chicken Pasta">
+        <p>Cajun Chicken Pasta</p>
+      </div>
+      <div class="recipe-card">
+        <img src="images/eggrolls.jpg" alt="Tex-Mex Egg Rolls">
+        <p>Tex-Mex Egg Rolls</p>
+      </div>
     </div>
-    </main>
+  </main>
 
     <footer>
         <h2>Contact Us</h2>

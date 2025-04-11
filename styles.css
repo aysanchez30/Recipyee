@@ -1,71 +1,105 @@
-/* ---------- GENERAL ---------- */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #222;
-    font-size: 16px;
-  }
+/* HEADER STYLING */
+header {
+  background-color: #abb4d0;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 10%;
+}
+
+/* NAVIGATION STYLING */
+nav {
+  background-color: #d3dbf3;
+  overflow: hidden;
+}
+
+/* Make the UL fill the container and align items */
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+/* Each nav item fills equal space */
+nav li {
+  flex: 1;
+  text-align: center;
+  border: 3px solid black; /* Add dividing line */
+}
+
+/* Style for the nav links */
+nav li a {
+  display: block;
+  padding: 15px 0;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+/* Optional hover effect */
+nav li a:hover {
+  background-color: #e6ecfc;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+/* WELCOME TEXT */
+.welcome-text {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* FEATURED RECIPE STYLING */
+
+main h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Center the recipe cards container */
+.featured-recipes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px auto;
+  max-width: 600px; /* Optional: to keep it from stretching too wide */
+  text-align: center;
+}
+.recipe-card {
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
   
-  /* ---------- HEADERS ---------- */
-  h1 {
-    font-family: 'Georgia', serif;
-    font-size: 36px;
-    color: #1e1e1e;
-  }
-  
-  h2 {
-    font-family: 'Georgia', serif;
-    font-size: 28px;
-    color: #2e2e2e;
-  }
-  
-  h3 {
-    font-family: 'Georgia', serif;
-    font-size: 22px;
-    color: #333;
-  }
-  
-  /* ---------- NAVIGATION ---------- */
-  nav {
-    background-color: #d3dbf3;
-    padding: 10px 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  /* ---------- MAIN CONTENT ---------- */
-  main p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  section h3 {
-    color: #444;
-  }
-  
-  .card, .info-box, .form-box {
-    background-color: #f3f3f3;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  /* ---------- FORM SECTION ---------- */
+  /* FORM SECTION */
   form {
     background-color: #34495e;
     color: white;
@@ -97,16 +131,141 @@ body {
     font-weight: bold;
   }
   
-  /* ---------- FOOTER ---------- */
+  /* FOOTER */
   footer {
     background-color: #d3dbf3;
     padding: 20px;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
   }
   
   footer h2 {
     font-size: 20px;
     margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .about-header {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px 0 20px;
   }
   
+  /* ABOUT PAGE */
+  .about-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-header {
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .chef-text {
+    flex: 1;
+    font-size: 22px;
+    line-height: 2;
+  }
+  
+  .about-image {
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .mission-statement-header {
+    text-align: left;
+    font-size: 30px;
+    margin: 20px 0 20px;
+  }
+  .mission-statement {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 22px;
+    line-height: 2;
+  }
+
+  /* CONTACT PAGE */
+/* Flex wrapper with 3-column style */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* This is the centered "middle box" */
+.contact-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+/* Header styling */
+.contact-header {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Dark form card */
+.contact-form {
+  background-color: #2e3b4e;
+  padding: 30px 40px;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  color: #333;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #4b79ff;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: white;
+  color: #2e3b4e;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #ddd;
+}
