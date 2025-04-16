@@ -3,6 +3,7 @@ header {
   background-color: #abb4d0;
   text-align: center;
   border-radius: 0 0 20px 20px;
+  font-family: 'Playfair Display', serif;
 }
 
 .header-container {
@@ -19,13 +20,12 @@ header {
   border-radius: 10%;
 }
 
-/* NAVIGATION STYLING */
+/* NAV */
 nav {
   background-color: #d3dbf3;
   overflow: hidden;
 }
 
-/* Make the UL fill the container and align items */
 nav ul {
   display: flex;
   margin: 0;
@@ -34,23 +34,20 @@ nav ul {
   width: 100%;
 }
 
-/* Each nav item fills equal space */
 nav li {
   flex: 1;
   text-align: center;
-  border: 3px solid black; /* Add dividing line */
+  border: 3px solid black;
+  font-family: 'Playfair Display', serif;
 }
-
-/* Style for the nav links */
 nav li a {
   display: block;
   padding: 15px 0;
   font-weight: bold;
   color: black;
   text-decoration: none;
+  font-family: 'Playfair Display', serif;
 }
-
-/* Optional hover effect */
 nav li a:hover {
   background-color: #e6ecfc;
 }
@@ -64,31 +61,34 @@ nav li a:hover {
   border-radius: 20px;
 }
 
-/* WELCOME TEXT */
 .welcome-text {
   text-align: center;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 1000px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
 }
 
-/* FEATURED RECIPE STYLING */
+/* FEATURED RECIPE SECTION */
 
 main h2 {
   text-align: center;
   margin-top: 30px;
+  font-family: 'Playfair Display', serif;
 }
 
-/* Center the recipe cards container */
 .featured-recipes {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 90px;
   margin: 20px auto;
-  max-width: 600px; /* Optional: to keep it from stretching too wide */
+  max-width: 600px;
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 .recipe-card {
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
 .recipe-card img {
@@ -97,14 +97,14 @@ main h2 {
   border-radius: 15px;
   object-fit: cover;
 }
-
   
-  /* FORM SECTION */
+  /* CONTACT PAGE */
   form {
     background-color: #34495e;
     color: white;
     padding: 20px;
     border-radius: 10px;
+    font-family: 'Playfair Display', serif;
   }
   
   form label {
@@ -137,6 +137,7 @@ main h2 {
     padding: 20px;
     text-align: center;
     font-size: 20px;
+    font-family: 'Playfair Display', serif;
   }
   
   footer h2 {
@@ -161,6 +162,7 @@ main h2 {
     text-align: left;
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
   }
   
   .about-container {
@@ -182,7 +184,6 @@ main h2 {
     border-radius: 20px;
     object-fit: cover;
     flex-shrink: 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   .mission-statement-header {
     text-align: left;
@@ -198,61 +199,124 @@ main h2 {
     line-height: 2;
   }
 
-  /* CONTACT PAGE */
-/* Flex wrapper with 3-column style */
-.contact-wrapper {
+/* RECIPE PAGE */
+.recipe_main {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  font-family: 'Playfair Display', serif;
 }
 
-/* This is the centered "middle box" */
-.contact-container {
+.container1 {
   flex: 1;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 500px;
 }
 
-/* Header styling */
-.contact-header {
-  font-size: 36px;
+.container1 h2 {
+  font-size: 32px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-/* Dark form card */
-.contact-form {
-  background-color: #2e3b4e;
-  padding: 30px 40px;
+.container1 img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.ingredients-box {
+  background-color: #f1f1f1;
+  padding: 20px;
   border-radius: 15px;
-  color: white;
-}
-
-/* Form groups */
-.form-group {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
   font-size: 16px;
-  font-family: inherit;
-  color: #333;
+  line-height: 1.6;
 }
 
-input:focus,
-textarea:focus {
-  outline: 2px solid #4b79ff;
+.ingredients-box h3 {
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
 }
+
+.ingredients-box ul {
+  columns: 2; 
+  column-gap: 30px;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+.ingredients-box li {
+  margin-bottom: 8px;
+}
+
+.container2 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  line-height: 2;
+  }
+
+.container2 h3 {
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.cajunpasta_img {
+  width: 500px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black
+}
+
+/* CONTACT PAGE */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .contact-container {
+    flex: 1;
+    max-width: 600px;
+  }
+  .contact-header {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-form {
+    background-color: #2e3b4e;
+    padding: 30px 40px;
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #333;
+  }
+  
 
 /* Submit button */
 button[type="submit"] {
@@ -262,8 +326,8 @@ button[type="submit"] {
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;;
+  font-family: 'Playfair Display', serif;
 }
 
 button[type="submit"]:hover {
