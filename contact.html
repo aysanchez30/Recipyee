@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <body>
     <head>
         <meta charset="UTF-8">
@@ -39,29 +40,37 @@
             <div class="contact-container">
               <h2 class="contact-header">Contact Us</h2>
           
-              <form action="#" method="post" class="contact-form">
+              <form action="#" method="post" class="contact-form" id="contact-form">
                 <div class="form-group">
                   <label for="name">Name:</label>
-                  <input type="text" id="name" name="name" required>
+                  <input type="text" id="name" name="name">
+                  <span class="error-message" id="name-error"></span>
                 </div>
-          
+              
                 <div class="form-group">
                   <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required>
+                  <input type="email" id="email" name="email">
+                  <span class="error-message" id="email-error"></span>
                 </div>
-          
+              
                 <div class="form-group">
                   <label for="phone">Phone:</label>
                   <input type="text" id="phone" name="phone">
                 </div>
-          
+              
                 <div class="form-group">
                   <label for="message">Message:</label>
-                  <textarea id="message" name="message" rows="4" required></textarea>
+                  <textarea id="message" name="message" rows="4"></textarea>
+                  <span class="error-message" id="message-error"></span>
                 </div>
-          
+              
                 <button type="submit">Submit</button>
               </form>
+
+              <div id="success-box" class="success-box hidden">
+                <p>We're so happy to hear from you,<br>we'll get back to you as soon as we can!</p>
+              </div>
+              
             </div>
           </div>          
 
@@ -71,5 +80,6 @@
         <p>Phone: (123) 456-7890</p>
         <p>Address: 123 Foodie Lane, Flavor Town, USA</p>
     </footer>
+    <script src="form.js"></script>
 </body>
 </html>
