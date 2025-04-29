@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
         valid = false;
       }
 
-      if (valid) {
-        e.preventDefault();
+      // if (valid) {
+      //   e.preventDefault();
       
-        const successBox = document.getElementById("success-box");
-        successBox.classList.remove("hidden");
+      //   const successBox = document.getElementById("success-box");
+      //   successBox.classList.remove("hidden");
       
-        form.reset();
-      }
+      //   form.reset();
+      // }
     });
   }); 
